@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/72d3c8dcc8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header id="home">
-      <nav>
-        <div class="wrapper">
+    <nav>
+        <div class="wrapper flexNav">
+            <img class="flag" src="./assets/spatule.png" alt="Flag of britain">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#contactus">Contact</a></li>
+            <li><a href="#contactUs">Location & Hours</a></li>
           </ul>
+          <img class="flag" src="./assets/crepe.png" alt="Flag of britain">
         </div>
       </nav>
+    <header id="home">
+      
       <div class="wrapper">
         <h1>Chez Paul</h1>
       </div>
@@ -26,14 +33,14 @@
     <main>
       <section class="about" id="about">
         <div class="wrapper flexAbout">
-            <div class="imgContainer">
-              <img
-                src="./assets/c63fc048-6d54-4bb0-8f07-72cf164e04d0.jpg"
-                alt="A photo of the chef Paul standing in the restaurant "
-              />
-            </div>
-            <div class="abouttext">
-                <h2>About Us</h2>
+          <div class="imgContainer">
+            <img
+              src="./assets/c63fc048-6d54-4bb0-8f07-72cf164e04d0.jpg"
+              alt="A photo of the chef Paul standing in the restaurant "
+            />
+          </div>
+          <div class="abouttext">
+            <h2>About Us</h2>
             <p>
               Welcome to "Chez Paul", a restaurant where we specialize in
               delicious crêpes and galettes inspired by the Brittany region of
@@ -58,49 +65,85 @@
       <section class="menu" id="menu">
         <div class="wrapper">
           <h2>Our menu</h2>
-          <h3>Galettes</h3>
-          <p>
-            To create our galette, we follow the original recipe from Brittany!
-            We made them with a thin, savory buckwheat crepe that is filled with
-            a variety of delicious ingredients
-          </p>
-          <ul class="flexGalette">
-            <li class="galette">
-              <h4>1/La complete</h4>
-              <p>The traditional: Egg, French emmental cheese, ham</p>
-              <p class="price">$16</p>
-            </li>
-            <li class="galette">
-              <h4>2/La bretonne</h4>
-              <p>
-                Breton hotdog - French emmental cheese, mild sausage, hot pepper
-                rings, homemade mustard and honey sauce
-              </p>
-              <p class="price">$18</p>
-            </li>
-            <li class="galette">
-              <h4>3/La savoyarde</h4>
-              <p>
-                Tomme de Savoie cheese AOP/IGP (French cheese), ham, potato,
-                tomato
-              </p>
-              <p class="price">$19</p>
-            </li>
-            <li class="galette">
-              <h4>4/La nordique</h4>
-              <p>
-                Creme fraiche chives, smoked salmon, spinach, homemade lemon
-                sauce
-              </p>
-              <p class="price">$18</p>
-            </li>
-            <li class="galette">
-              <h4>5/La biquette</h4>
-              <p>Goat cream, goat cheese, arugula, tomato, walnut, honey</p>
-              <p class="price">$18</p>
-            </li>
-          </ul>
+          <div class="menuGalettes">
+            <h3>Galettes</h3>
+            <p>
+              To create our galette, we follow the original recipe from
+              Brittany! We made them with a thin, savory buckwheat crepe that is
+              filled with a variety of delicious ingredients
+            </p>
+            <ul class="flexGalette">
+              <li class="galette">
+                <h4>1/Emmentale</h4>
+                <p>French emmental cheese</p>
+                <p class="price">$9.95</p>
+              </li>
+              <li class="galette">
+                <h4>2/La tradition</h4>
+                <p>Egg, French emmental cheese, mushroom</p>
+                <p class="price">$12.95</p>
+              </li>
+              <li class="galette">
+                <h4>3/La complete</h4>
+                <p>Egg, French emmental cheese, ham</p>
+                <p>-Extra ham $1</p>
+                <p class="price">$13.95</p>
+              </li>
+              <li class="galette">
+                <h4>3/La mega complete</h4>
+                <p>Egg, French emmental cheese, ham, mushroom</p>
+                <p class="price">$14.95</p>
+              </li>
+              <li class="galette">
+                <h4>5/La bretonne</h4>
+                <p>
+                  Breton hotdog - French emmental cheese, mild sausage, hot
+                  pepper rings, homemade mustard and honey sauce
+                </p>
+                <p class="price">$14.95</p>
+              </li>
+              <li class="galette">
+                <h4>6/La savoyarde</h4>
+                <p>
+                  Tomme de Savoie cheese AOP/IGP (French cheese), ham, potato,
+                  tomato
+                </p>
+                <p>-Extra ham $1</p>
+                <p class="price">$15.95</p>
+              </li>
 
+              <li class="galette">
+                <h4>7/La biquette</h4>
+                <p>Goat cream, goat cheese, arugula, tomato, walnut, honey</p>
+                <p class="price">$13.95</p>
+              </li>
+
+              <li class="galette">
+                <h4>8/La fromage</h4>
+                <p>
+                  Tomme de Savoie cheese AOP/GP (French cheese),French emmental
+                  cheese, goat cheese
+                </p>
+                <p class="price">$15.95</p>
+              </li>
+              <li class="galette">
+                <h4>9/La nordique</h4>
+                <p>
+                  Creme fraiche chives, smoked salmon, spinach, homemade lemon
+                  sauce
+                </p>
+                <p class="price">$14.95</p>
+              </li>
+            </ul>
+            <h4 class="extra">Extra toppings</h4>
+            <p>
+              Ham / Saucisse $2.50, Salmon $3.00, Moutard and honev sauce /
+              Lemon sauce/ Honey $0.80, Potato / Arugula / Baby spinach / Tomato
+              $1.50, Egg $1.20
+            </p>
+            <h4 class="extra">Extra cheese</h4>
+            <p class="extraText">French emmental, Goat, Tomme de Savoie (French cheese)</p>
+          </div>
           <h3>Crepes</h3>
           <p>
             Our crepes are made from a batter of flour, eggs, milk, and a touch
@@ -108,92 +151,135 @@
             becomes thin and crispy. We then add a filling of your choice!
             Enjoy!
           </p>
-          <ul class="flexcrepes">
-            <li class="crepe">
-              <h4>6/Noisette maison</h4>
-              <p>The great classic of the house with our hazelnut spread</p>
-              <p class="price2">$15</p>
-            </li>
-            <li class="crepe">
-              <h4>7/Confiture maison</h4>
-              <p>Homemade strawberry jam</p>
-              <p class="price2">$14</p>
-            </li>
-            <li class="crepe">
-              <h4>8/Frangipane maison</h4>
-              <p>Homemade French almond cream, sprinkled with almond</p>
-              <p class="price2">$14</p>
-            </li>
-            <li class="crepe">
-              <h4>9/Sucre</h4>
-              <p>Cane sugar, lemon juice</p>
-              <p class="price">$6.5</p>
-            </li>
-          </ul>
-          <h3>Gourmandise</h3>
-          <p>Try also our homemade jar!</p>
-          <ul class="flexgourmandise">
-            <li class="gourmandise">
-              <h4>Hazelnut Spread</h4>
-              <p>The Great Classic Of The House, 250gr Jar</p>
-              <p class="price">$10</p>
-            </li>
-            <li class="gourmandise">
-              <h4>Homemade Strawberry Jam</h4>
-              <p>250gr Jar</p>
-              <p class="price">$10</p>
-            </li>
-          </ul>
-          <h3>Drinks</h3>
-          <ul class="drinks">
-            <li class="pop">
-              <p>Pop</p> 
-              <p class="price">$2.5</p>
-            </li>
-            <li class="pop">
-              <p>Water bottle</p>
-              <p class="price">$2</p>
-            </li>
-          </ul>
+
+          <div class="menuCrepes">
+            <ul class="flexcrepes">
+              <li class="crepe">
+                <h4>10/Noisette maison</h4>
+                <p>The great classic of the house with our hazelnut spread</p>
+                <p class="price">$9.95</p>
+              </li>
+              <li class="crepe">
+                <h4>11/Noisette maison et banane</h4>
+                <p>
+                  The great classic of the house with our hazelnut spread,banana
+                </p>
+                <p class="price">$11.95</p>
+              </li>
+              <li class="crepe">
+                <h4>12/Noisette maison et oreo</h4>
+                <p>
+                  The great classic of the house with our hazelnut
+                  spread,oreocookie
+                </p>
+                <p class="price">$11.95</p>
+              </li>
+              <li class="crepe">
+                <h4>13/Confiture maison</h4>
+                <p>Homemade strawberry jam</p>
+                <p class="price">$8.95</p>
+              </li>
+              <li class="crepe">
+                <h4>14/Sucre</h4>
+                <p>Organic Cane sugar, lemon juice, butter</p>
+                <p class="price">$4.95</p>
+              </li>
+              <li class="crepe">
+                <h4>15/Erable</h4>
+                <p>very dark mapple syrup</p>
+                <p class="price">$5.95</p>
+              </li>
+            </ul>
+            <h4 class="extra">Extra toppings</h4>
+            <p class="extraText">Alond / Coconut / Walnut $1</p>
+          </div>
+          <div class="menuGourmandise">
+            <h3>Gourmandise</h3>
+            <p>Try also our homemade jar!</p>
+            <ul class="flexgourmandise">
+              <li class="gourmandise">
+                <h4>Hazelnut Spread</h4>
+                <p>The Great Classic Of The House, 250ml Jar</p>
+                <p class="price2">$9.95</p>
+              </li>
+              <li class="gourmandise">
+                <h4>Homemade Strawberry Jam</h4>
+                <p>250ml Jar</p>
+                <p class="price2">$9.95</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menuDrinks">
+            <h3>Drinks</h3>
+            <ul class="drinks">
+              <li class="pop">
+                <p>Pop</p>
+                <p class="price2">$2.5</p>
+              </li>
+              <li class="pop">
+                <p>Water bottle</p>
+                <p class="price2">$2</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="contactUs" id="contactUs">
         <div class="wrapper">
-          <h2>Contact us</h2>
-          <p>chezpaulcreperie@gmail.com</p>
-          <p>(416) 368-3599</p>
-          <p>833 Queen Street West, M6J 1G1, Toronto, Ontario</p>
           <div class="imgContainer">
-            <img src="" alt="Screenshot of the restaurant location" />
+            <img
+              src="./assets/location2.png"
+              alt="Screenshot of the restaurant location"
+            />
           </div>
-          <h2>Hours</h2>
-          <ul>
-            <li>
-              <p>Monday 12:00PM 9:00PM</p>
-            </li>
-            <li>
-              <p>Tuesday 12:00PM 9:00PM</p>
-            </li>
-            <li>
-              <p>Wednesday 12:00PM 9:00PM</p>
-            </li>
-            <li>
-              <p>Thursday 12:00PM 9:00PM</p>
-            </li>
-            <li>
-              <p>Friday 12:00PM 10:00PM</p>
-            </li>
-            <li>
-              <p>Saturday 12:00PM 10:00PM</p>
-            </li>
-            <li>
-              <p>Sunday 12:00PM 09:00PM</p>
-            </li>
-          </ul>
-          <ul>
-            <li><i></i>Ritual</li>
-            <li><i></i>Instagram</li>
-          </ul>
+          <div class="contactInfos">
+            <h2>Location <span>& Hours</span></h2>
+            <div class="contactText">
+              <p>chezpaulcreperie@gmail.com</p>
+              <p>(416) 368-3599</p>
+              <p>833 Queen Street West, M6J 1G1, Toronto, Ontario</p>
+
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://store.ritual.co/order/chez-paul-restaurant-queen-niagara-toronto/796b?q=chez+paul&op=1&lat=43.6457729&lon=-79.40954359999999&city=toronto-on"
+                    ><img src="./assets/ritual.png" alt="Ritual icon"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="fa-brands fa-instagram"
+                    href="https://www.instagram.com/chezpaulcreperie/?hl=en"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <ul>
+              <li>
+                <p class="hours">Mon 12:00pm 9:00pm</p>
+              </li>
+
+              <li>
+                <p class="hours">Tue 12:00pm 9:00pm</p>
+              </li>
+              <li>
+                <p class="hours">Wed 12:00pm 9:00pm</p>
+              </li>
+              <li>
+                <p class="hours">Thu 12:00pm 9:00pm</p>
+              </li>
+              <li>
+                <p class="hours">Fri 12:00pm 10:00pm</p>
+              </li>
+              <li>
+                <p class="hours">Sat 12:00pm 10:00pm</p>
+              </li>
+              <li>
+                <p class="hours">Sun 12:00pm 9:00pm</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
