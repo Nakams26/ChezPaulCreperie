@@ -18,10 +18,12 @@
   // Nav media query
   nav {
     ul {
-      // flex-direction: column;
+       flex-direction: column;
       li {
-        font-size: 1.3rem;
+
+        font-size: 1rem;
         padding-top: 20px;
+      
       }
     }
   }
@@ -35,6 +37,8 @@
   .dynamicMenu {
     align-items: flex-end;
     position: absolute;
+    top: 30px;
+    right: -35px;
     transform: translatex(190%);
     transition: transform 0.5s;
   }
@@ -48,7 +52,7 @@
 
   .menuOpen {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -56,7 +60,7 @@
     cursor: pointer;
   }
   .menuClose {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -66,7 +70,7 @@
   //header
   header {
     img {
-      width: 300px;
+      width: 250px;
     }
   }
 
@@ -105,7 +109,17 @@
   .flexcrepes,
   .flexgourmandise {
     justify-content: center;
+   
   }
+  .galette{
+    margin-right: 0;
+  }
+  .flexcrepes{
+  .crepe {
+    margin-right: 0;
+  }
+}
+ 
   //Contact
   .flexContactUs {
     display: flex;

@@ -673,8 +673,14 @@ footer p {
   }
 }
 @media (max-width: 820px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   nav ul li {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-top: 20px;
   }
 }
@@ -687,6 +693,8 @@ footer p {
         -ms-flex-align: end;
             align-items: flex-end;
     position: absolute;
+    top: 30px;
+    right: -35px;
     -webkit-transform: translatex(190%);
             transform: translatex(190%);
     -webkit-transition: -webkit-transform 0.5s;
@@ -704,7 +712,7 @@ footer p {
   }
   .menuOpen {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -712,14 +720,14 @@ footer p {
     cursor: pointer;
   }
   .menuClose {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: absolute;
     top: 10px;
     right: 15px;
     cursor: pointer;
   }
   header img {
-    width: 300px;
+    width: 250px;
   }
   .flexAbout {
     -webkit-box-orient: vertical;
@@ -758,6 +766,12 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .galette {
+    margin-right: 0;
+  }
+  .flexcrepes .crepe {
+    margin-right: 0;
   }
   .flexContactUs {
     display: -webkit-box;
