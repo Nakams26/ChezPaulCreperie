@@ -702,6 +702,9 @@ footer p {
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
   }
+  .dynamicMenu li {
+    padding-top: 15px;
+  }
   .showMenu {
     -webkit-transform: translatex(0);
             transform: translatex(0);
