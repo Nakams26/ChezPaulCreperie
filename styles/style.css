@@ -312,7 +312,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -325,54 +325,66 @@ section {
   padding-bottom: 50px;
 }
 
-header {
-  background-image: url(../assets/logo.jpg);
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  height: 80vh;
-  padding-top: 10px;
-}
-header h1 {
-  display: none;
-}
-header p {
-  text-align: center;
-}
-
-.flexNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 20px;
-}
-.flexNav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
 }
-.flexNav ul li {
+nav ul li {
   padding-right: 50px;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-.flexNav ul a:hover, .flexNav ul a:focus {
+nav ul a:hover,
+nav ul a:focus {
   color: #cf201b;
   text-decoration: underline;
 }
 
 .flag {
   width: 50px;
+}
+
+.menuOpen {
+  color: transparent;
+}
+
+.menuClose {
+  color: transparent;
+}
+
+header {
+  background-image: url(../assets/local.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header img {
+  width: 400px;
+}
+
+h1 {
+  display: none;
 }
 
 .flexAbout {
@@ -420,13 +432,27 @@ header p {
 .menu .extra {
   margin-top: 30px;
 }
-.menu .menuGalettes, .menu .menuCrepes, .menu .menuGourmandise {
+.menu .menuGalettes,
+.menu .menuCrepes,
+.menu .menuGourmandise {
   border-bottom: 45px solid #3d4a8c;
 }
 .menu .extraText {
   padding-bottom: 30px;
 }
-.menu .flexGalette {
+.menu li {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.menu li:hover,
+.menu li:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.flexGalette {
   margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,7 +463,8 @@ header p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.menu .galette {
+
+.galette {
   width: calc(20% - 20px);
   margin-right: 50px;
   margin-top: 50px;
@@ -461,7 +488,7 @@ header p {
 .flexcrepes .crepe {
   width: calc(25% - 20px);
   margin-right: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
   min-width: 250px;
   border: 3px solid #cf201b;
   padding: 25px;
@@ -480,7 +507,7 @@ header p {
           justify-content: space-between;
 }
 .flexgourmandise .gourmandise {
-  width: calc(50% - 20px);
+  width: calc(50% - 100px);
   margin-top: 40px;
   min-width: 250px;
   border: 3px solid #cf201b;
@@ -561,8 +588,12 @@ header p {
 .contactInfos li {
   margin-bottom: 5px;
 }
+.contactInfos p {
+  text-align: center;
+}
 .contactInfos .hours {
   font-size: 1rem;
+  padding-bottom: 10px;
   text-align: left;
 }
 
@@ -622,4 +653,132 @@ header p {
 .social a:hover, .social a:focus {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+footer {
+  background-color: black;
+}
+footer p {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 1020px) {
+  nav ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 820px) {
+  nav ul li {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 750px) {
+  nav {
+    position: relative;
+  }
+  .dynamicMenu {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: absolute;
+    -webkit-transform: translatex(190%);
+            transform: translatex(190%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .showMenu {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .menuOpen {
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .menuClose {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+  }
+  header img {
+    width: 300px;
+  }
+  .flexAbout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flexAbout .imgContainer {
+    width: 100%;
+  }
+  .flexAbout .abouttext {
+    width: 100%;
+    margin: 0;
+  }
+  .flexAbout .abouttext h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .flexAbout .abouttext p {
+    text-align: center;
+  }
+  .menu h3,
+  .menu h4 {
+    text-align: center;
+  }
+  .menu p {
+    text-align: center;
+  }
+  .flexContactUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactInfos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfos h2 {
+    text-align: center;
+  }
+  .contactInfos h2 span {
+    display: inline;
+  }
+  .contactInfos p {
+    text-align: center;
+  }
+  .contactInfos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .contactInfos ul .hours {
+    text-align: center;
+  }
 }

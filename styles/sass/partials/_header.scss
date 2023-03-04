@@ -2,48 +2,28 @@
 
 //----------------------Starts of header styling-----------------//
 header {
-    background-image: url(../assets/logo.jpg);
+    background-image: url(../assets/local.png);
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
     padding-top: 10px;
-    h1{
-        display: none;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 400px;
     }
-    p{
-        text-align: center;
-    }
-   
 }
 
-.flexNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    ul{
-        display: flex;
-        justify-content: center;
-       
-      
-        li{
-            padding-right: 50px;
-            font-size: 2rem;
-            font-weight: bold;
-             text-transform: uppercase;
-        }
-        a:hover, a:focus {
-            color: $primaryColor;
-            text-decoration: underline;
-    
-        }
+    h1{
+       display: none;
     }
-}
-.flag {
-    width: 50px;
-}
-   
+    
+
+
+ 
 
 
 

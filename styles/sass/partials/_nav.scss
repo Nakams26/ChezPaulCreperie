@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+//----------------------Starts of nav styling-----------------//
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    li {
+      padding-right: 50px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    a:hover,
+    a:focus {
+      color: $primaryColor;
+      text-decoration: underline;
+    }
+  }
+}
+.flag {
+  width: 50px;
+}
+
+.menuOpen {
+  color: transparent;
+}
+.menuClose{
+color: transparent;
+}

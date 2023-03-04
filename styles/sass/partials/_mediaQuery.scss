@@ -1,0 +1,127 @@
+@use "./variables" as *;
+
+//----------------------Starts of menu styling-----------------//
+
+@media (max-width: 1020px) {
+  // Nav media query
+  nav {
+    ul {
+      // flex-direction: column;
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  // Nav media query
+  nav {
+    ul {
+      // flex-direction: column;
+      li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  // Nav media query
+  nav {
+    position: relative;
+  }
+  .dynamicMenu {
+    align-items: flex-end;
+    position: absolute;
+    transform: translatex(190%);
+    transition: transform 0.5s;
+  }
+
+  // Dynamic menu coming form the right
+  .showMenu {
+    transform: translatex(0);
+    transition: transform 0.5s;
+  }
+  // Dynamic menu coming form the right
+
+  .menuOpen {
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .menuClose {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  //header
+  header {
+    img {
+      width: 300px;
+    }
+  }
+
+  //About
+  .flexAbout {
+    flex-direction: column-reverse;
+    align-items: center;
+    .imgContainer {
+      width: 100%;
+    }
+    .abouttext {
+      width: 100%;
+      margin: 0;
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  // menu
+  .menu {
+    h3,
+    h4 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  //Contact
+  .flexContactUs {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contactInfos {
+    flex-direction: column;
+    h2 {
+      text-align: center;
+
+      span {
+        display: inline;
+      }
+    }
+    p {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      margin-bottom: 10px;
+      .hours {
+        text-align: center;
+      }
+    }
+  }
+}

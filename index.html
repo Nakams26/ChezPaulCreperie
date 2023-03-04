@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chez Paul Crêperie</title>
+    <link rel="icon"  href="./assets/logo.jpg">
     <link rel="stylesheet" href="./styles/style.css" />
     <script
       src="https://kit.fontawesome.com/72d3c8dcc8.js"
@@ -13,22 +14,27 @@
   </head>
   <body>
     <nav>
-        <div class="wrapper flexNav">
-            <img class="flag" src="./assets/spatule.png" alt="Flag of britain">
-          <ul>
+        <div class="wrapper">
+          <ul class="dynamicMenu">
+            <!-- <li><img class="flag" src="./assets/spatule.png" alt="A spatule"></li> -->
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#contactUs">Location & Hours</a></li>
+            <!-- <li><img class="flag" src="./assets/crepe.png" alt="a crepe"></li> -->
           </ul>
-          <img class="flag" src="./assets/crepe.png" alt="Flag of britain">
         </div>
       </nav>
-    <header id="home">
-      
-      <div class="wrapper">
-        <h1>Chez Paul</h1>
+      <div class="hamburgerMenu">
+        <i class="fa-solid fa-bars menuOpen"></i>
+        <i class="fa-solid fa-xmark menuClose"></i>
       </div>
+    <header id="home">
+       <div class="imgContainer">
+        <img  src="./assets/logo.png" alt="Chez paul logo">
+       </div>
+       <h1>Chez Paul</h1>
+    </div>
     </header>
     <main>
       <section class="about" id="about">
@@ -74,28 +80,28 @@
             </p>
             <ul class="flexGalette">
               <li class="galette">
-                <h4>1/Emmentale</h4>
+                <h4>1/ Emmental</h4>
                 <p>French emmental cheese</p>
                 <p class="price">$9.95</p>
               </li>
               <li class="galette">
-                <h4>2/La tradition</h4>
+                <h4>2/ La tradition</h4>
                 <p>Egg, French emmental cheese, mushroom</p>
                 <p class="price">$12.95</p>
               </li>
               <li class="galette">
-                <h4>3/La complete</h4>
+                <h4>3/ La complete</h4>
                 <p>Egg, French emmental cheese, ham</p>
                 <p>-Extra ham $1</p>
                 <p class="price">$13.95</p>
               </li>
               <li class="galette">
-                <h4>3/La mega complete</h4>
+                <h4>3/ La mega complete</h4>
                 <p>Egg, French emmental cheese, ham, mushroom</p>
                 <p class="price">$14.95</p>
               </li>
               <li class="galette">
-                <h4>5/La bretonne</h4>
+                <h4>5/ La bretonne</h4>
                 <p>
                   Breton hotdog - French emmental cheese, mild sausage, hot
                   pepper rings, homemade mustard and honey sauce
@@ -103,7 +109,7 @@
                 <p class="price">$14.95</p>
               </li>
               <li class="galette">
-                <h4>6/La savoyarde</h4>
+                <h4>6/ La savoyarde</h4>
                 <p>
                   Tomme de Savoie cheese AOP/IGP (French cheese), ham, potato,
                   tomato
@@ -113,13 +119,13 @@
               </li>
 
               <li class="galette">
-                <h4>7/La biquette</h4>
+                <h4>7/ La biquette</h4>
                 <p>Goat cream, goat cheese, arugula, tomato, walnut, honey</p>
                 <p class="price">$13.95</p>
               </li>
 
               <li class="galette">
-                <h4>8/La fromage</h4>
+                <h4>8/ La fromage</h4>
                 <p>
                   Tomme de Savoie cheese AOP/GP (French cheese),French emmental
                   cheese, goat cheese
@@ -127,7 +133,7 @@
                 <p class="price">$15.95</p>
               </li>
               <li class="galette">
-                <h4>9/La nordique</h4>
+                <h4>9/ La nordique</h4>
                 <p>
                   Creme fraiche chives, smoked salmon, spinach, homemade lemon
                   sauce
@@ -155,19 +161,19 @@
           <div class="menuCrepes">
             <ul class="flexcrepes">
               <li class="crepe">
-                <h4>10/Noisette maison</h4>
+                <h4>10/ Noisette maison</h4>
                 <p>The great classic of the house with our hazelnut spread</p>
                 <p class="price">$9.95</p>
               </li>
               <li class="crepe">
-                <h4>11/Noisette maison et banane</h4>
+                <h4>11/ Noisette maison et banane</h4>
                 <p>
                   The great classic of the house with our hazelnut spread,banana
                 </p>
                 <p class="price">$11.95</p>
               </li>
               <li class="crepe">
-                <h4>12/Noisette maison et oreo</h4>
+                <h4>12/ Noisette maison et oreo</h4>
                 <p>
                   The great classic of the house with our hazelnut
                   spread,oreocookie
@@ -175,36 +181,36 @@
                 <p class="price">$11.95</p>
               </li>
               <li class="crepe">
-                <h4>13/Confiture maison</h4>
+                <h4>13/ Confiture maison</h4>
                 <p>Homemade strawberry jam</p>
                 <p class="price">$8.95</p>
               </li>
               <li class="crepe">
-                <h4>14/Sucre</h4>
+                <h4>14/ Sucre</h4>
                 <p>Organic Cane sugar, lemon juice, butter</p>
                 <p class="price">$4.95</p>
               </li>
               <li class="crepe">
-                <h4>15/Erable</h4>
+                <h4>15/ Erable</h4>
                 <p>very dark mapple syrup</p>
                 <p class="price">$5.95</p>
               </li>
             </ul>
             <h4 class="extra">Extra toppings</h4>
-            <p class="extraText">Alond / Coconut / Walnut $1</p>
+            <p class="extraText">Almond / Coconut / Walnut $1</p>
           </div>
           <div class="menuGourmandise">
             <h3>Gourmandise</h3>
-            <p>Try also our homemade jar!</p>
+            <p>Try our homemade jar!</p>
             <ul class="flexgourmandise">
               <li class="gourmandise">
                 <h4>Hazelnut Spread</h4>
-                <p>The Great Classic Of The House, 250ml Jar</p>
+                <p>The Great Classic Of The House, 250ml jar</p>
                 <p class="price2">$9.95</p>
               </li>
               <li class="gourmandise">
                 <h4>Homemade Strawberry Jam</h4>
-                <p>250ml Jar</p>
+                <p>250ml jar</p>
                 <p class="price2">$9.95</p>
               </li>
             </ul>
@@ -214,7 +220,7 @@
             <ul class="drinks">
               <li class="pop">
                 <p>Pop</p>
-                <p class="price2">$2.5</p>
+                <p class="price2">$2.50</p>
               </li>
               <li class="pop">
                 <p>Water bottle</p>
@@ -225,7 +231,7 @@
         </div>
       </section>
       <section class="contactUs" id="contactUs">
-        <div class="wrapper">
+        <div class="wrapper flexContactUs">
           <div class="imgContainer">
             <img
               src="./assets/location2.png"
@@ -254,35 +260,28 @@
                 </li>
               </ul>
             </div>
-
+            
             <ul>
               <li>
-                <p class="hours">Mon 12:00pm 9:00pm</p>
+                <p class="hours"> Monday to Thursday : 12:00pm to 9:00pm </p>
               </li>
 
               <li>
-                <p class="hours">Tue 12:00pm 9:00pm</p>
+                <p class="hours">Friday / Saturday : 12:00pm to 10:00pm</p>
               </li>
               <li>
-                <p class="hours">Wed 12:00pm 9:00pm</p>
+                <p class="hours">Sunday : 12:00pm to 9:00pm</p>
               </li>
-              <li>
-                <p class="hours">Thu 12:00pm 9:00pm</p>
-              </li>
-              <li>
-                <p class="hours">Fri 12:00pm 10:00pm</p>
-              </li>
-              <li>
-                <p class="hours">Sat 12:00pm 10:00pm</p>
-              </li>
-              <li>
-                <p class="hours">Sun 12:00pm 9:00pm</p>
+              
               </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Chez Paul - Crêperie bretonne</p>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
