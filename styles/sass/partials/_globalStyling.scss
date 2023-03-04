@@ -1,0 +1,39 @@
+@use "./variables" as *;
+
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: $primaryFont;
+    color: black;
+}
+
+p, li {
+    font-family: $primaryFont;
+}
+
+h1, h2, h3, h4, a {
+    font-family: $secondayFont;
+}
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+p {
+    font-size: 1.2rem;
+}
+section {
+
+        padding-top: 20px;
+        padding-bottom: 50px;
+    
+}

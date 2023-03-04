@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+//----------------------Starts of about us section styling-----------------//
+
+.flexAbout{
+    display: flex;
+    align-items: center;
+    .imgContainer{
+        width: 30%;
+        min-width: 300px;
+        img {
+            border-radius: 20px;
+            border: 8px solid $primaryColor;
+        }
+    }
+}
+.abouttext {
+    width: 70%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin-bottom: 50px;
+       
+    }
+    p{
+        padding-bottom: 30px;
+    }
+}
+//----------------------End of about us section styling-----------------//

@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+//----------------------Starts of header styling-----------------//
+header {
+    background-image: url(../assets/logo.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 80vh;
+    padding-top: 10px;
+    h1{
+        display: none;
+    }
+    p{
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+       
+      
+        li{
+            padding-right: 50px;
+            font-size: 2rem;
+            font-weight: bold;
+             text-transform: uppercase;
+        }
+        a:hover, a:focus {
+            color: $primaryColor;
+            text-decoration: underline;
+    
+        }
+    }
+}
+
+//----------------------End of header styling-----------------//
