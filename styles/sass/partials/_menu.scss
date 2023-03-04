@@ -35,6 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 .galette {
   width: calc((100% / 5) - 20px);
@@ -91,6 +92,9 @@
 
     padding: 20px;
     position: relative;
+  }
+  .popChoice{
+    font-size: 0.9rem;
   }
 }
 

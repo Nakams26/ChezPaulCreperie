@@ -532,6 +532,9 @@ h1 {
   padding: 20px;
   position: relative;
 }
+.drinks .popChoice {
+  font-size: 0.9rem;
+}
 
 .price {
   position: absolute;
@@ -748,6 +751,13 @@ footer p {
   }
   .menu p {
     text-align: center;
+  }
+  .flexGalette,
+  .flexcrepes,
+  .flexgourmandise {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .flexContactUs {
     display: -webkit-box;
