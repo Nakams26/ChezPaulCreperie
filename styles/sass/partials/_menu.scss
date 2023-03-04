@@ -16,7 +16,8 @@
   }
   .menuGalettes,
   .menuCrepes,
-  .menuGourmandise {
+  .menuGourmandise,
+  .menuDrinks {
     border-bottom: 45px solid $secondaryColor;
   }
   .extraText {
@@ -70,7 +71,7 @@
   justify-content: space-between;
   .gourmandise {
     width: calc((100% / 2) - 100px);
-    margin-top: 40px;
+    margin: 30px 0;
     min-width: 250px;
     border: 3px solid $primaryColor;
 
@@ -83,6 +84,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 30px 0;
 
   .pop {
     margin-top: 40px;

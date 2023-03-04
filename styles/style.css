@@ -434,7 +434,8 @@ h1 {
 }
 .menu .menuGalettes,
 .menu .menuCrepes,
-.menu .menuGourmandise {
+.menu .menuGourmandise,
+.menu .menuDrinks {
   border-bottom: 45px solid #3d4a8c;
 }
 .menu .extraText {
@@ -508,7 +509,7 @@ h1 {
 }
 .flexgourmandise .gourmandise {
   width: calc(50% - 100px);
-  margin-top: 40px;
+  margin: 30px 0;
   min-width: 250px;
   border: 3px solid #cf201b;
   padding: 20px;
@@ -524,6 +525,7 @@ h1 {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 30px 0;
 }
 .drinks .pop {
   margin-top: 40px;
