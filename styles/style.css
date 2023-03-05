@@ -452,6 +452,9 @@ h1 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+.menu span {
+  margin-left: 20px;
+}
 
 .flexGalette {
   margin: 30px 0;
@@ -661,7 +664,7 @@ h1 {
 }
 
 footer {
-  background-color: black;
+  background-color: #cf201b;
 }
 footer p {
   padding: 10px;
