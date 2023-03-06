@@ -29,10 +29,14 @@
 
 @media (max-width: 750px) {
   // Nav media query
+  .test {
+    animation: slideDown 0.8s ease 1;
+  }
   nav {
     display: none;
     ul{
       animation: slideDown 0.8s ease 1;
+      padding-top: 0;
     li{
       padding-right: 30px;
       font-size: 0.8rem;

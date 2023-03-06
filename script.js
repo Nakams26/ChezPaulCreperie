@@ -19,7 +19,8 @@ header.addEventListener("click", function (event) {
   
     closeMenu.style.color = "black";
     openMenu.style.display = "none";
-    nav.style.display = "block";
+    nav.style.display="block";
+  
   }
   // If when you click the burger button, the menu  already contain showMenu as class, then I remove the class. This will hide the menu
   else if (event.target.classList[2]=== "menuClose") {
