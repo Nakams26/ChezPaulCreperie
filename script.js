@@ -1,6 +1,6 @@
 //1. Adding a burger menu in the header for the mobile view
 
-// Add a variable for li that  I need to display when clicking on the menu
+// Add a variable for header.
 const header = document.querySelector("header");
 // Add a variable for the hamburger menu that I put in a div. this is the clickable element
 const nav = document.querySelector("nav");
@@ -14,20 +14,19 @@ const closeMenu = document.querySelector(".menuClose");
 //Add a event listener to open menu when the burger menu is clicked
 
 header.addEventListener("click", function (event) {
-  // If when you click the burger button, the menu doesn't contain showMenu as class, then I add the class (The class allow us to display the menu from the right with a transform translate X).  I also in the same time hide the open icon and display the close icon
-  if (event.target.classList[2]=== "menuOpen") {
+  console.log(event.target)
+;  // If you click the open menu, we display the nav and the close button, we also hide the open button
+  if (event.target.classList[0]=== "menuOpen") {
   
-    closeMenu.style.color = "black";
+    closeMenu.style.display = "block";
     openMenu.style.display = "none";
     nav.style.display="block";
   
   }
-  // If when you click the burger button, the menu  already contain showMenu as class, then I remove the class. This will hide the menu
-  else if (event.target.classList[2]=== "menuClose") {
+  // If you click the close menu, we hide the nav and the close button, we also display the open button
+  else if (event.target.classList[0]=== "menuClose") {
   
-
-    //I also in the same time show the  open menu icon and hide the close menu
-    closeMenu.style.color = "transparent";
+    closeMenu.style.display = "none";
     openMenu.style.display = "block";
     nav.style.display = "none";
   }
