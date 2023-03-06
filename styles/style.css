@@ -717,7 +717,8 @@ footer p {
             animation: slideDown 0.8s ease 1;
   }
   nav ul li {
-    font-size: 0.7rem;
+    padding-right: 30px;
+    font-size: 0.8rem;
   }
   .menuOpen {
     color: black;
