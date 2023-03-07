@@ -21,13 +21,51 @@ nav {
     }
   }
 }
-.flag {
-  width: 50px;
+.menuNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  i{
+   padding-bottom: 10px;
+   font-size: 1rem;
+   cursor: pointer;
+  }
+}
+.navMenu{
+  margin-right: 10px;
+  position: relative;
+}
+.fa-chevron-down{
+  position: absolute;
+  right: 35px;
+  color: black;
+  z-index: 10;
+  
+  }
+.fa-chevron-up{
+position: absolute;
+right: 35px;
+color: transparent;
+
 }
 
-.menuOpen {
-display: none;
+//Styling the dropDowm menu
+.newDiv{
+   margin-top: -20px;
+  ul{
+    display: flex;
+    flex-direction: column;
+   padding: 0;
+    li{
+     padding: 5px 10px;
+      font-size: 1.1rem;
+      a:hover, a:focus{
+        color: $primaryColor;
+
+      }
+    }
+    
+  }
 }
-.menuClose{
-  display: none;
-}
+//----------------------ends of nav styling-----------------//

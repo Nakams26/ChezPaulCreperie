@@ -1,69 +1,67 @@
 @use "./variables" as *;
 
 //----------------------Starts of contact Us styling-----------------//
-.contactUs{
-    margin-top: 80px;
-    .imgContainer{
-         margin-bottom: 40px;
-        img {
-            border: 5px solid ;
-        }
+.contactUs {
+  margin-top: 80px;
+  .imgContainer {
+    margin-bottom: 40px;
+    img {
+      border: 5px solid;
     }
+  }
 }
-
-.contactInfos{
-    display: flex;
-    justify-content: space-between;
-  
-    h2{
-        margin-bottom: 50px;
-       span{
-        display: block;
-       }
+.contactInfos {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    margin-bottom: 50px;
+    span {
+      display: block;
     }
-    li{
-        margin-bottom: 5px;
-    }
-    p{
-        text-align: center;
-    }
-    .hours{
-        font-size: 1rem;
-        padding-bottom: 10px;
-        text-align: left;
-       
-    }
-    
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  p {
+    text-align: center;
+  }
+  .hours {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    text-align: left;
+  }
 }
-.contactText{
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin-bottom: 10px;
+  }
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    p{
-        margin-bottom: 10px;
-    }
+    padding: 30px;
+  }
+  .fa-brands {
+    font-size: 3rem;
+  }
+  img {
+    width: 55px;
+    border-radius: 10px;
+  }
+  a {
+    transition: transform 0.2s;
+  }
+  a:hover,
+  a:focus {
+    transform: scale(1.5);
+  }
 }
-.social{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    li{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px;
-    }
-    .fa-brands{
-        font-size: 3rem;
-    }
-    img{
-        width: 55px;
-        border-radius: 10px;
-    }
-    a{
-        transition: transform .2s;
-    }
-    a:hover, a:focus{
-        transform: scale(1.5);
-    }
-}
+//----------------------ends of contact Us styling-----------------//

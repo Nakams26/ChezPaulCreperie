@@ -2,29 +2,27 @@
 
 //----------------------Starts of about us section styling-----------------//
 
-.flexAbout{
-    display: flex;
-    align-items: center;
-    .imgContainer{
-        width: 30%;
-        min-width: 300px;
-        img {
-            
-            border: 5px solid ;
-        }
+.flexAbout {
+  display: flex;
+  align-items: center;
+  .imgContainer {
+    width: 30%;
+    min-width: 300px;
+    img {
+      border: 5px solid;
     }
+  }
 }
-.abouttext {
-    width: 70%;
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    h2{
-        margin-bottom: 50px;
-       
-    }
-    p{
-        padding-bottom: 30px;
-    }
+.aboutText {
+  width: 70%;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-bottom: 50px;
+  }
+  p {
+    padding-bottom: 30px;
+  }
 }
 //----------------------End of about us section styling-----------------//

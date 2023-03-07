@@ -293,11 +293,16 @@ a {
   color: black;
 }
 
-p, li {
+p,
+li {
   font-family: "louis";
 }
 
-h1, h2, h3, h4, a {
+h1,
+h2,
+h3,
+h4,
+a {
   font-family: "ahai";
 }
 
@@ -350,16 +355,61 @@ nav ul a:focus {
   text-decoration: underline;
 }
 
-.flag {
-  width: 50px;
+.menuNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.menuNav i {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.menuOpen {
-  display: none;
+.navMenu {
+  margin-right: 10px;
+  position: relative;
 }
 
-.menuClose {
-  display: none;
+.fa-chevron-down {
+  position: absolute;
+  right: 35px;
+  color: black;
+  z-index: 10;
+}
+
+.fa-chevron-up {
+  position: absolute;
+  right: 35px;
+  color: transparent;
+}
+
+.newDiv {
+  margin-top: -20px;
+}
+.newDiv ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+.newDiv ul li {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
+.newDiv ul li a:hover, .newDiv ul li a:focus {
+  color: #cf201b;
 }
 
 header {
@@ -388,6 +438,14 @@ h1 {
   display: none;
 }
 
+.menuOpen {
+  display: none;
+}
+
+.menuClose {
+  display: none;
+}
+
 .flexAbout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,7 +462,7 @@ h1 {
   border: 5px solid;
 }
 
-.abouttext {
+.aboutText {
   width: 70%;
   margin-left: 40px;
   display: -webkit-box;
@@ -415,10 +473,10 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.abouttext h2 {
+.aboutText h2 {
   margin-bottom: 50px;
 }
-.abouttext p {
+.aboutText p {
   padding-bottom: 30px;
 }
 
@@ -659,7 +717,8 @@ h1 {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
-.social a:hover, .social a:focus {
+.social a:hover,
+.social a:focus {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -709,11 +768,7 @@ footer p {
     padding-top: 20px;
   }
 }
-@media (max-width: 750px) {
-  .test {
-    -webkit-animation: slideDown 0.8s ease 1;
-            animation: slideDown 0.8s ease 1;
-  }
+@media (max-width: 820px) {
   nav {
     display: none;
   }
@@ -725,6 +780,21 @@ footer p {
   nav ul li {
     padding-right: 30px;
     font-size: 0.8rem;
+  }
+  .fa-chevron-down {
+    right: 18px;
+    top: 17px;
+  }
+  .fa-chevron-up {
+    right: 18px;
+    top: 17px;
+  }
+  .newDiv ul li {
+    padding: 5px 10px;
+    font-size: 0.6rem;
+  }
+  .newDiv ul li a:hover, .newDiv ul li a:focus {
+    color: #cf201b;
   }
   .menuOpen {
     display: block;

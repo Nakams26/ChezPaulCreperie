@@ -19,7 +19,11 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About us</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li class="menuNav">
+            <a class="navMenu" href="#menu">Menu</a
+            ><i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-up"></i>
+          </li>
           <li><a href="#contactUs">Location & Hours</a></li>
         </ul>
       </div>
@@ -45,7 +49,7 @@
         <div class="wrapper">
           <h2>Our menu</h2>
           <!-- Adding a div for all galettes -->
-          <div class="menuGalettes">
+          <div class="menuGalettes" id="menuGalettes">
             <h3>Galettes</h3>
             <p>
               To create our galette, we follow the original recipe from
@@ -70,7 +74,7 @@
                 <p>Egg,</p>
                 <p>French emmental cheese,</p>
                 <p>ham</p>
-                <p>- Extra ham: $1</p>
+                <p>- Extra ham: $2</p>
                 <p class="price">$13.95</p>
               </li>
               <li class="galette">
@@ -95,7 +99,7 @@
                 <p>ham,</p>
                 <p>potato,</p>
                 <p>tomato</p>
-                <p>- Extra ham: $1</p>
+                <p>- Extra ham: $2</p>
                 <p class="price">$15.95</p>
               </li>
               <li class="galette">
@@ -137,15 +141,16 @@
           </div>
           <!-- Ends of galettes -->
           <!-- Start of crepes -->
-          <h3>Crepes</h3>
-          <p>
-            Our crepes are made from a batter of flour, eggs, milk, and a touch
-            of sugar and salt, which is then cooked on a hot griddle until it
-            becomes thin and crispy. We then add a filling of your choice!
-            Enjoy!
-          </p>
-          <!-- Adding a div for all crepes -->
-          <div class="menuCrepes">
+          <div class="menuCrepes" id="menuCrepes">
+            <h3>Crepes</h3>
+            <p>
+              Our crepes are made from a batter of flour, eggs, milk, and a
+              touch of sugar and salt, which is then cooked on a hot griddle
+              until it becomes thin and crispy. We then add a filling of your
+              choice! Enjoy!
+            </p>
+            <!-- Adding a div for all crepes -->
+
             <ul class="flexcrepes">
               <li class="crepe">
                 <h4>10/ Noisette maison</h4>
@@ -189,7 +194,7 @@
           </div>
           <!-- End of crepes -->
           <!-- Start of gourmandise -->
-          <div class="menuGourmandise">
+          <div class="menuGourmandise" id="menuGourmandise">
             <h3>Gourmandises</h3>
             <p>Try our homemade jar!</p>
             <ul class="flexgourmandise">
@@ -207,7 +212,7 @@
           </div>
           <!-- end of gourmandise -->
           <!-- Starts of drinks -->
-          <div class="menuDrinks">
+          <div class="menuDrinks" id="menuDrinks">
             <h3>Drinks</h3>
             <ul class="drinks">
               <li class="pop">
@@ -238,7 +243,7 @@
             />
           </div>
           <!-- A div for the text (to use flex) -->
-          <div class="abouttext">
+          <div class="aboutText">
             <h2>About Us</h2>
             <p>
               Welcome to "Chez Paul", a restaurant where we specialize in

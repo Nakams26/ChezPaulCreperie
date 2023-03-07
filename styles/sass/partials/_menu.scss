@@ -39,7 +39,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 .galette {
   width: calc((100% / 5) - 20px);
@@ -50,7 +49,6 @@
   padding: 25px;
   position: relative;
 }
-
 .flexcrepes {
   margin: 30px 0;
   display: flex;
@@ -66,7 +64,6 @@
     position: relative;
   }
 }
-
 .flexgourmandise {
   margin: 30px 0;
   display: flex;
@@ -82,13 +79,11 @@
     position: relative;
   }
 }
-
 .drinks {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 30px 0;
-
   .pop {
     margin-top: 40px;
     // margin-right: 40px;
@@ -98,11 +93,10 @@
     padding: 20px;
     position: relative;
   }
-  .popChoice{
+  .popChoice {
     font-size: 0.9rem;
   }
 }
-
 .price {
   position: absolute;
   transform: rotate(25deg);
@@ -127,3 +121,5 @@
   font-family: $primaryFont;
   font-size: 2rem;
 }
+
+//----------------------Ends of menu styling-----------------//

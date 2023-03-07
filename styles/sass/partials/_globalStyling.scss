@@ -1,39 +1,42 @@
 @use "./variables" as *;
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    font-family: $primaryFont;
-    color: black;
-}
-
-p, li {
-    font-family: $primaryFont;
+a {
+  text-decoration: none;
+  font-family: $primaryFont;
+  color: black;
 }
 
-h1, h2, h3, h4, a {
-    font-family: $secondayFont;
+p,
+li {
+  font-family: $primaryFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: $secondayFont;
 }
 h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
-h3{
-    font-size: 2.2rem;
-    text-transform: uppercase;
+h3 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
 }
-h4{
-    font-size: 1.5rem;
-    text-transform: uppercase;
+h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 section {
-
-        padding-top: 20px;
-        padding-bottom: 50px;
-    
+  padding-top: 20px;
+  padding-bottom: 50px;
 }

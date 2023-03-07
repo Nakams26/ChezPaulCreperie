@@ -2,29 +2,27 @@
 
 //----------------------Starts of header styling-----------------//
 header {
-    background-image: url(../assets/local.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
-    padding-top: 10px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-        width: 400px;
-    }
+  background-image: url(../assets/local.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 400px;
+  }
 }
-
-    h1{
-       display: none;
-    }
-    
-
-
- 
-
-
-
+h1 {
+  display: none;
+}
+.menuOpen {
+  display: none;
+}
+.menuClose {
+  display: none;
+}
 //----------------------End of header styling-----------------//
