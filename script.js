@@ -1,3 +1,25 @@
+import app from "./firebase.js";
+//Import the sdk for the rtd product
+import {
+  getDatabase,
+  ref,
+  onValue,
+  push,
+  update,
+  get,
+} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+
+// Initialize Database content using the configured app
+const database = getDatabase(app);
+//Create a specific reference to the root of my db
+//This is the representation of our DB (this is how we hook into the DB and update and interact with it)
+const dbRef = ref(database);
+const dbGalettes = ref(database, `.galettes`);
+console.log(dbGalettes);
+const dbCrepes = ref(database, `/crepes`);
+const dbGourmandises = ref(database, `/gourmandises`);
+const dbDrinks = ref(database, `/drinks`);
+
 // Add a variable for header.
 const header = document.querySelector("header");
 // Add a variable for the hamburger menu that I put in a div. this is the clickable element
