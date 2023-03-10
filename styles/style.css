@@ -854,6 +854,15 @@ footer p {
   .flexCrepes .crepe {
     margin-right: 0;
   }
+  .aboutText {
+    margin-left: 0;
+  }
+  .aboutText h2 {
+    text-align: center;
+  }
+  .aboutText p {
+    text-align: center;
+  }
   .flexContactUs {
     display: -webkit-box;
     display: -ms-flexbox;
