@@ -16,52 +16,54 @@
 @media (max-width: 820px) {
   // Nav media query
   nav {
-      li {
-        font-size: 1rem;
-        padding-top: 20px;
-      }
+    li {
+      font-size: 1rem;
+      padding-top: 20px;
     }
   }
+}
+
 // Global media query for mobile
 @media (max-width: 820px) {
   // Nav media query
+  // Burger menu
   nav {
     display: none;
-    ul{
+    ul {
       animation: slideDown 0.8s ease 1;
       padding-top: 0;
-    li{
-      padding-right: 30px;
-      font-size: 0.8rem;
+      li {
+        padding-right: 30px;
+        font-size: 0.8rem;
+      }
     }
   }
-}
-.fa-chevron-down{
-  right: 18px;
-  top: 17px;
-
+  .fa-chevron-down {
+    right: 18px;
+    top: 17px;
   }
-.fa-chevron-up{
-  right: 18px;
-  top: 17px;
-}
-.newDiv{
- ul{
-   li{
-    padding: 5px 10px;
-     font-size: 0.6rem;
-     a:hover, a:focus{
-       color: $primaryColor;
-     }
-   }
-   
- }
-}
+  .fa-chevron-up {
+    right: 18px;
+    top: 17px;
+  }
+  // Dropdown menu
+  .newDiv {
+    ul {
+      li {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+        a:hover,
+        a:focus {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
   // Dynamic menu coming form the top
   .menuOpen {
     display: block;
     color: black;
-   width: 30px;
+    width: 30px;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -113,20 +115,19 @@
       text-align: center;
     }
   }
-  .flexGalette, 
-  .flexcrepes,
-  .flexgourmandise {
+  .flexGalette,
+  .flexCrepes,
+  .flexGourmandise {
     justify-content: center;
-   
   }
-  .galette{
+  .galette {
     margin-right: 0;
   }
-  .flexcrepes{
-  .crepe {
-    margin-right: 0;
+  .flexCrepes {
+    .crepe {
+      margin-right: 0;
+    }
   }
-}
   //Contact
   .flexContactUs {
     display: flex;

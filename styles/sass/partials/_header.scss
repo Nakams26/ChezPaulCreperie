@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 //----------------------Starts of header styling-----------------//
+//global styling, using flex to center everything whitin tthe header
 header {
   background-image: url(../assets/local.png);
   background-position: center;
@@ -16,9 +17,11 @@ header {
     width: 400px;
   }
 }
+//Hiding h1
 h1 {
   display: none;
 }
+// Hiding burger menu
 .menuOpen {
   display: none;
 }

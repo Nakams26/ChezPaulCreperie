@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 //----------------------Starts of nav styling-----------------//
+//global styling, using flex to diaply li side by side
 nav {
   ul {
     display: flex;
@@ -21,51 +22,50 @@ nav {
     }
   }
 }
-.menuNav{
+
+//Styling dropdon icon in the menu li
+.menuNav {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  i{
-   padding-bottom: 10px;
-   font-size: 1rem;
-   cursor: pointer;
+  i {
+    padding-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
-.navMenu{
+.navMenu {
   margin-right: 10px;
   position: relative;
 }
-.fa-chevron-down{
+//styling dropdown/up icons
+.fa-chevron-down {
   position: absolute;
   right: 35px;
   color: black;
   z-index: 10;
-  
-  }
-.fa-chevron-up{
-position: absolute;
-right: 35px;
-color: transparent;
-
+}
+.fa-chevron-up {
+  position: absolute;
+  right: 35px;
+  color: transparent;
 }
 
-//Styling the dropDowm menu
-.newDiv{
-   margin-top: -20px;
-  ul{
+//Styling the dropDown menu
+.newDiv {
+  margin-top: -20px;
+  ul {
     display: flex;
-    flex-direction: column;
-   padding: 0;
-    li{
-     padding: 5px 10px;
+    padding: 0;
+    li {
+      padding: 5px 10px;
       font-size: 1.1rem;
-      a:hover, a:focus{
+      a:hover,
+      a:focus {
         color: $primaryColor;
-
       }
     }
-    
   }
 }
 //----------------------ends of nav styling-----------------//

@@ -398,17 +398,14 @@ nav ul a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0;
 }
 .newDiv ul li {
   padding: 5px 10px;
   font-size: 1.1rem;
 }
-.newDiv ul li a:hover, .newDiv ul li a:focus {
+.newDiv ul li a:hover,
+.newDiv ul li a:focus {
   color: #cf201b;
 }
 
@@ -511,9 +508,6 @@ h1 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.menu span {
-  margin-left: 20px;
-}
 
 .flexGalette {
   margin: 30px 0;
@@ -537,7 +531,7 @@ h1 {
   position: relative;
 }
 
-.flexcrepes {
+.flexCrepes {
   margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,7 +542,7 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.flexcrepes .crepe {
+.flexCrepes .crepe {
   width: calc(25% - 20px);
   margin-right: 30px;
   margin-top: 50px;
@@ -558,7 +552,7 @@ h1 {
   position: relative;
 }
 
-.flexgourmandise {
+.flexGourmandise {
   margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,7 +563,7 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.flexgourmandise .gourmandise {
+.flexGourmandise .gourmandise {
   width: calc(50% - 100px);
   margin: 30px 0;
   min-width: 250px;
@@ -595,9 +589,6 @@ h1 {
   border: 3px solid #cf201b;
   padding: 20px;
   position: relative;
-}
-.drinks .popChoice {
-  font-size: 0.9rem;
 }
 
 .price {
@@ -793,7 +784,8 @@ footer p {
     padding: 5px 10px;
     font-size: 0.6rem;
   }
-  .newDiv ul li a:hover, .newDiv ul li a:focus {
+  .newDiv ul li a:hover,
+  .newDiv ul li a:focus {
     color: #cf201b;
   }
   .menuOpen {
@@ -850,8 +842,8 @@ footer p {
     text-align: center;
   }
   .flexGalette,
-  .flexcrepes,
-  .flexgourmandise {
+  .flexCrepes,
+  .flexGourmandise {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -859,7 +851,7 @@ footer p {
   .galette {
     margin-right: 0;
   }
-  .flexcrepes .crepe {
+  .flexCrepes .crepe {
     margin-right: 0;
   }
   .flexContactUs {

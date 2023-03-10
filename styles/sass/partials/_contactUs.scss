@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 //----------------------Starts of contact Us styling-----------------//
+// Global styling
 .contactUs {
   margin-top: 80px;
   .imgContainer {
@@ -10,6 +11,7 @@
     }
   }
 }
+// Using flex to display every element side by side
 .contactInfos {
   display: flex;
   justify-content: space-between;
@@ -31,6 +33,7 @@
     text-align: left;
   }
 }
+// Using flex to center text
 .contactText {
   display: flex;
   flex-direction: column;
@@ -39,6 +42,7 @@
     margin-bottom: 10px;
   }
 }
+// Using flex to display icons side by side
 .social {
   display: flex;
   justify-content: space-evenly;
@@ -59,6 +63,7 @@
   a {
     transition: transform 0.2s;
   }
+  // Make icons bigger when hovered
   a:hover,
   a:focus {
     transform: scale(1.5);

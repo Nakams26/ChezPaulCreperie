@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 //----------------------Starts of menu styling-----------------//
-
+// Global styling
 .menu {
   h2 {
     text-align: center;
@@ -14,6 +14,7 @@
   .extra {
     margin-top: 30px;
   }
+  // Styling Uls
   .menuGalettes,
   .menuCrepes,
   .menuGourmandise,
@@ -30,10 +31,8 @@
   li:focus {
     transform: scale(1.1);
   }
-  span {
-    margin-left: 20px;
-  }
 }
+// Using flex to display galettes side by side
 .flexGalette {
   margin: 30px 0;
   display: flex;
@@ -49,7 +48,8 @@
   padding: 25px;
   position: relative;
 }
-.flexcrepes {
+// Using flex to display crpes side by side
+.flexCrepes {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +64,8 @@
     position: relative;
   }
 }
-.flexgourmandise {
+// Using flex to display gourmandises side by side
+.flexGourmandise {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +80,7 @@
     position: relative;
   }
 }
+// Using flex to display drinks side by side
 .drinks {
   display: flex;
   justify-content: space-evenly;
@@ -93,9 +95,7 @@
     padding: 20px;
     position: relative;
   }
-  .popChoice {
-    font-size: 0.9rem;
-  }
+  // Positioning prices top/right of li
 }
 .price {
   position: absolute;
