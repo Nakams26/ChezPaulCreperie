@@ -80,8 +80,7 @@ onValue(dbGalettes, function (data) {
         sixthtext
       );
 
-      ulGalette.appendChild(listItem)
-      
+      ulGalette.appendChild(listItem);
     }
   }
 });
@@ -98,7 +97,7 @@ onValue(dbCrepes, function (data) {
       const text1 = newCrepes[key].text;
       const text2 = newCrepes[key].text2;
       const text3 = newCrepes[key].text3;
-      
+
       //creating every element
       const nameItem = document.createElement("h4");
       nameItem.textContent = name;
@@ -120,14 +119,8 @@ onValue(dbCrepes, function (data) {
       thirdtext.textContent = text3;
 
       //Append element to the page
-      listItem.append(
-        nameItem,
-        priceItem,
-        firstText,
-        secondText,
-        thirdtext
-      );
-      ulCrepes.appendChild(listItem) 
+      listItem.append(nameItem, priceItem, firstText, secondText, thirdtext);
+      ulCrepes.appendChild(listItem);
     }
   }
 });
@@ -164,20 +157,12 @@ onValue(dbGourmandises, function (data) {
       const thirdtext = document.createElement("p");
       thirdtext.textContent = text3;
 
-
       //Append element to the page
-      listItem.append(
-        nameItem,
-        priceItem,
-        firstText,
-        secondText,
-        thirdtext
-      );
-      ulGourmandises.appendChild(listItem) 
+      listItem.append(nameItem, priceItem, firstText, secondText, thirdtext);
+      ulGourmandises.appendChild(listItem);
     }
   }
 });
-
 
 // Managing drinks database
 onValue(dbDrinks, function (data) {
@@ -236,13 +221,11 @@ onValue(dbDrinks, function (data) {
         sixthtext
       );
 
-      ulDrinks.appendChild(listItem)
-      
+      ulDrinks.appendChild(listItem);
     }
   }
 });
 // ----------------------end of firebase code------------------------//
-
 
 // ----------------------Burger menu------------------------//
 // Add a variable for header.
@@ -280,7 +263,6 @@ header.addEventListener("click", function (event) {
 });
 //------------------------------End of burger menu---------------------//
 
-
 //-----------------------------Dropdown menu in nav--------------------//
 //Event listener when click on the dropdow icon
 dropDown.addEventListener("click", function () {
@@ -313,10 +295,26 @@ dropUp.addEventListener("click", function () {
   const newDiv = document.querySelector(".newDiv");
   //removing the new div
   newDiv.remove();
-    //Hiding displaying icons
+  //Hiding displaying icons
   dropUp.style.color = "transparent";
   dropUp.style.zIndex = "0";
   dropDown.style.color = "black";
 });
 
 //-----------------------------end ofDropdown menu in nav--------------------//
+
+//-----------------------------Displaying phone number for order--------------------//
+
+const orderSection = document.querySelector(".order");
+const pPhone = document.querySelector(".pPhone");
+
+//Event listener when click on the order section
+orderSection.addEventListener("click", (event) => {
+  // If the target is the phone icon>> I display the phone number
+  if (event.target.classList[1] === "fa-square-phone") {
+    pPhone.style.display = "block";
+  } else {
+    pPhone.style.display = "none";
+  }
+});
+//-----------------------------DEnd of script--------------------//

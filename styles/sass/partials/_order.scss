@@ -1,0 +1,50 @@
+@use "./variables" as *;
+
+//----------------------Starts of order styling-----------------//
+.order {
+  margin-bottom: 50px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.flexOrder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 45px solid $secondaryColor;
+  padding-bottom: 30px;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .delivery {
+      padding-top: 8px;
+    }
+
+    img {
+      width: 80px;
+      border-radius: 20px;
+      transition: 0.7s;
+    }
+    i {
+      font-size: 4.3rem;
+      color: $primaryColor;
+      transition: 0.7s;
+      cursor: pointer;
+    }
+
+    img:hover,
+    img:focus,
+    i:hover,
+    i:focus {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.pPhone {
+  display: none;
+}
+//----------------------End of order styling-----------------//

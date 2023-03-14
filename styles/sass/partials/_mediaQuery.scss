@@ -128,14 +128,26 @@
       margin-right: 0;
     }
   }
+
+  //Order
+  .order {
+    margin-bottom: 20px;
+  }
+  .flexOrder {
+    flex-direction: column;
+    li {
+      margin-bottom: 20px;
+    }
+  }
   //About
-  .aboutText{
-    h2{
+  .aboutText {
+    h2 {
       text-align: center;
     }
     margin-left: 0;
-    p{text-align: center;}
-    
+    p {
+      text-align: center;
+    }
   }
   //Contact
   .flexContactUs {
