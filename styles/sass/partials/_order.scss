@@ -9,6 +9,7 @@
     margin-bottom: 50px;
   }
 }
+//Using flex to display icons side by side
 .flexOrder {
   display: flex;
   justify-content: space-around;
@@ -43,7 +44,7 @@
     }
   }
 }
-
+// Hiding phone number to display it when we click on the phone icon
 .pPhone {
   display: none;
 }
