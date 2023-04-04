@@ -641,7 +641,20 @@ h1 {
 }
 
 .pPhone {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 115px;
+  text-align: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.phoneCall {
+  position: relative;
+}
+
+.phoneCall:hover .pPhone {
+  opacity: 1;
 }
 
 .flexAbout {
@@ -924,6 +937,13 @@ footer p {
   }
   .flexOrder li {
     margin-bottom: 20px;
+  }
+  .phoneCall {
+    padding-bottom: 30px;
+  }
+  .pPhone {
+    opacity: 1;
+    top: 115px;
   }
   .aboutText {
     margin-left: 0;

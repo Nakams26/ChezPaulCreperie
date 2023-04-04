@@ -303,18 +303,4 @@ dropUp.addEventListener("click", function () {
 
 //-----------------------------end ofDropdown menu in nav--------------------//
 
-//-----------------------------Displaying phone number for order--------------------//
-
-const orderSection = document.querySelector(".order");
-const pPhone = document.querySelector(".pPhone");
-
-//Event listener when click on the order section
-orderSection.addEventListener("click", (event) => {
-  // If the target is the phone icon>> I display the phone number
-  if (event.target.classList[1] === "fa-square-phone") {
-    pPhone.style.display = "block";
-  } else {
-    pPhone.style.display = "none";
-  }
-});
 //-----------------------------DEnd of script--------------------//
