@@ -721,10 +721,11 @@ h1 {
 .contactInfos p {
   text-align: center;
 }
-.contactInfos .hours {
+
+.hours {
   font-size: 1rem;
   padding-bottom: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .contactText {
@@ -986,5 +987,11 @@ footer p {
   }
   .contactInfos ul .hours {
     text-align: center;
+  }
+  .contactInfos .storeHours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
